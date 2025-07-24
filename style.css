@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* root class */
+
+:root {
+    --primary-color: hsl(9, 100%, 64%);
+    --secondary-color: hsl(0, 0%, 0%);
+    --light-colour: hsl(0, 0%, 50%);
+
+    /* background-color */
+--primary-bg-color: hsl(52, 57%, 97%);
+    
+
+/* font-family */
+--ff-Inter: 'Inter', sans-serif;
+--ff-Noto: 'Noto Serif', serif;
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color:var(--primary-bg-color)
+   
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Noto Serif', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* img {
+    max-width: 500px;
+    height: auto; */
+/* } */
+
+
+/* utility class */
+.flex {
+    display: flex;
+}
+
+
+.margin-bottom-x {
+    margin-bottom: 120px;
+}
+.margin-bottom-xl {
+    margin-bottom: 130px;
+}
+.margin-bottom-xxl {
+    margin-bottom: 180px;
+}
+.padding-top {
+    padding-top: 150px !important;
+}
+
+/* common class */
+.container,
+section {
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    padding: 0 10px;
+
+}
+/* general class */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    
+}
+.logo  {
+    /* max-width: 150px; */
+
+}
+.menu>ul {
+    gap: 35px;
+}
+.menu>ul>li>a {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.menu>ul>li:first-child>a {
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+
+.menu>ul>li:last-child>a {
+    color: var(--secondary-color);
+} 
+
+i{
+    font-size: 1.2rem;}
+    
+.brand-container {
+    justify-content: space-around;
+        align-items: end;
+ 
+}
+.brand-container img {
+    max-width: 550px;
+    height: auto;
+ } 
+
+.brand-heading {
+    color: tomato;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.brand-heading:before {
+    color: rgb(0, 0, 0);
+    content: "ALWAYS";
+}
+.brand-info{
+    color: var(--light-colour);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
