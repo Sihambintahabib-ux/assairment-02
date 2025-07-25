@@ -59,54 +59,130 @@
         padding: 0px;
     }
 
+    .plant-card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+    }
+
 }
 
 @media screen and (max-width: 800px) {
+
+    .container,
+    section {
+        max-width: 90vw;
+        padding: 0px 0px;
+    }
+
+    .brand-img {
+        max-width: 100% !important;
+        height: auto;
+    }
+
+    .brand-description {
+        padding: 0 10px;
+    }
+
     .flower-lover-container {
 
         gap: 50px;
 
     }
 
-    .flower-lover-container .img-flower::after {
-        display: none;
-    }
+
 
     .plant-card-name {
-        
+
         font-size: 1rem !important;
         font-weight: 300;
     }
+
     .plant-card-price {
         font-size: .8rem !important;
         font-weight: 500;
 
     }
-        .plant-card-container {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 10px;
-    
-        }
+
+    /* plant 8grid to 2grid */
+    .plant-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
 
 
-        /* grid layout of deal section responsive   */
-                .plant-grid-container {
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto;
-                }
-        
-                .small-card,
-                .large-card {
-                    grid-column: 1;
-                    grid-row: auto;
-                }
-        
-                .plant-card .overlay h3 {
-                    font-size: 1.2rem;
-                }
-        
-                .plant-card .overlay a {
-                    font-size: 0.9rem;
-                }
+    /* grid layout of deal section responsive   */
+    .plant-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .small-card,
+    .large-card {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .plant-card .overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .plant-card .overlay a {
+        font-size: 0.9rem;
+    }
+
+    .form-container .form-group form button {
+        width: 10em;
+    }
+
+    .description {
+        padding: 5px 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flower-lover-container .img-flower::after {
+        display: none;
+    }
+
+    .footer-container {
+        /* flex-direction: column; */
+        display: block;
+        /*
+        align-items: center;
+        text-align: center; */
+    }
+
+    .footer-links {
+        display: block;
+        text-align: left;
+        /* flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-self: start; */
+    }
+
+    .footer-social {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .plant-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+    }
+
+    .form-container .form-group form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        gap: 0;
+    }
 }

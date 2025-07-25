@@ -33,7 +33,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--ff-Inter);
     background-color: var(--primary-bg-color)
 }
 
@@ -364,7 +364,7 @@ width: 100%;
 
 /* from section  */
 .form-container{
-    max-width:  100%;
+    max-width:  100% !important;
     /* height: 100vh; */
     background-image: url(assets/news-letter-bg.png);
     background-size: cover;
@@ -423,9 +423,11 @@ width: 100%;
     justify-content: space-between;
     align-items: center;
     color: var(--light-color, gray);
-    font: 1em sans-serif;
+    /* font: 1em sans-serif; */
+    font-family: var(--ff-Inter);
+    color: var(--light-colour);
     /* background-color: blanchedalmond; */
-    font-weight: 200;
+    font-weight: 300;
 }
 .footer-container div {
     /* flex:400px 1 1; */
@@ -447,6 +449,7 @@ width: 100%;
     margin-bottom: 10px;
     color: var(--secondary-color);
     font-size: 1.2rem;
+    color: var(--light-colour);
 }
 .footer-link{
     display: grid;
@@ -454,16 +457,6 @@ width: 100%;
     justify-content: center;
     align-items: center;
     /* gap: 20px; */
-}
-
-.footer-logo {
-/* flex: 1; */
-}
-.footer-pages-link {
-    /* flex: 300px 1 1; */
-}
-.footer-socialmedia-icon {
-    /* flex: 1; */
 }
 
 
@@ -502,7 +495,7 @@ width: 100%;
 .footer {
     background-color: #f9fbfd;
     padding: 40px 20px;
-    font-family: 'Segoe UI', sans-serif;
+    /* font-family: 'Segoe UI', sans-serif; */
 }
 
 .footer-container {
@@ -528,6 +521,7 @@ width: 100%;
     font-size: 1.3rem;
     line-height: 1.6;
     max-width: 400px;
+    padding-top: 20px;
 }
 
 .footer-links {
@@ -544,10 +538,12 @@ width: 100%;
 }
 
 .footer-column a {
-    color: #555;
+    /* color: #555; */
+    color: var(--light-colour);
     text-decoration: none;
     font-size: 14px;
     transition: color 0.3s;
+        padding: 10px 0;
 }
 
 .footer-column a:hover {
@@ -568,27 +564,4 @@ width: 100%;
 
 .footer-social img:hover {
     transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-    .footer-container {
-        /* flex-direction: column; */
-        display: block;
-        /*
-        align-items: center;
-        text-align: center; */
-    }
-
-    .footer-links {
-        display: block;
-        text-align: left;
-        /* flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        justify-self: start; */
-    }
-
-    .footer-social {
-        margin-top: 20px;
-    }
 }
