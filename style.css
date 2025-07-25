@@ -129,10 +129,11 @@ i {
 .brand-container {
     justify-content: space-around;
     align-items: end;
+    /* flex-wrap: wrap; */
 
 }
 
-.brand-container img {
+.brand-container .brand-img {
     max-width: 550px;
     height: auto;
 }
@@ -246,16 +247,15 @@ button {
     padding: 5px 10px;
 }
 
-.flower-lover-container .img {
+.flower-lover-container img {
 width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
 }
 
 .flower-lover-container .img-flower {
     position: relative;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
     flex: 1 1 300px;
 }
@@ -263,10 +263,10 @@ width: 100%;
 .flower-lover-container .img-flower::after {
     content: "";
     position: absolute;
-    top: -150px;
-    right: -200px;
-    width: 300px;
-    height: 300px;
+    top: -100px;
+    right: -100px;
+    width: 15rem;
+    height: 15rem;
     background-image: url(assets/trusted-badge.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -303,13 +303,14 @@ width: 100%;
     grid-template-rows: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-    background-color: #f5f8ff;
+    /* background-color: #203b7a; */
+
 }
 
 .plant-card {
     position: relative;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .plant-card img  {
