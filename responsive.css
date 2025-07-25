@@ -1,15 +1,18 @@
 @media screen and (max-width: 1000px) {
-h1,
-h2, 
-h3,
-h4,     
-h5,
-h6 {
-    font-size: 1.5rem;
-}
-p{
-    font-size: .9rem;
-}
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
     .menu-item {
         display: none;
     }
@@ -23,12 +26,18 @@ p{
     }
 
     .padding-top {
-        padding-top: 80px;
+        padding-top: 30px !important;
     }
-.brand-container {
-    
-    padding-top: 20px !important;
-}
+
+    .brand-container {
+
+        gap: 20px;
+        flex-wrap: wrap-reverse;
+
+
+        padding-top: 20px !important;
+    }
+
     .brand-heading {
         font-size: 1.6rem;
     }
@@ -37,15 +46,28 @@ p{
         font-size: .9rem;
     }
 
-    .container {
-        /* padding: 20px; */
 
+
+    .flower-lover-container {
+        flex-direction: column;
+        gap: 100px
     }
 
+    .flower-lover-container .img-flower {
+        max-width: 80%;
+        height: auto;
+    }
+.form-container .form-group form input {
+    width: 60vw;
+    height: 70px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 1.2rem;
 
 
-
-      /* .dealer-img-container {
+}
+    /* .dealer-img-container {
           grid-template-columns: 1fr;
           grid-template-rows: auto;
       }
@@ -62,7 +84,7 @@ p{
 
 
 
-        /* .dealer-img-container {
+    /* .dealer-img-container {
                 grid-template-columns: 1fr;
                     grid-template-rows: auto;
         }
@@ -79,16 +101,17 @@ p{
 
 
 
-        .brand-container img {
-            max-width: 450px;
-            height: auto;
-        }
-                .plant-card-container {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    gap: 10px;
-        
-                }
+    .brand-container img {
+        max-width: 450px;
+        height: auto;
+    }
+
+    .plant-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
 }
 
 /* Mobile */
@@ -114,6 +137,7 @@ p{
         font-size: 0.9rem;
     }
 }
+
 @media screen and (max-width: 600px) {
     .brand-container {
         flex-direction: column-reverse;
@@ -126,9 +150,10 @@ p{
     .menu>ul {
         align-items: flex-start;
     }
- .logo img {
-     max-width: 100px;
- }
+
+    .logo img {
+        max-width: 100px;
+    }
 
     .brand-heading:before {
         display: block;
@@ -142,10 +167,11 @@ p{
     .padding-top {
         padding-top: 30px !important;
     }
-         .plant-card-container {
-             display: grid;
-             grid-template-columns: repeat(1, 1fr);
-             gap: 10px;
-    
-         }
+
+    .plant-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+    }
 }
