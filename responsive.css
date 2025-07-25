@@ -41,6 +41,44 @@ p{
         /* padding: 20px; */
 
     }
+
+
+
+
+      /* .dealer-img-container {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+      }
+    
+      .dealer-img-1,
+      .dealer-img-2,
+      .dealer-img-3 {
+          grid-column: 1;
+          grid-row: auto;
+      }
+      } */
+
+
+
+
+
+        /* .dealer-img-container {
+                grid-template-columns: 1fr;
+                    grid-template-rows: auto;
+        }
+                   .dealer-img-1,
+                   .dealer-img-2,
+                   .dealer-img-3 {
+                       grid-column: auto;
+                       grid-row: auto;
+                   } */
+
+
+
+
+
+
+
         .brand-container img {
             max-width: 450px;
             height: auto;
@@ -54,6 +92,28 @@ p{
 }
 
 /* Mobile */
+
+/* ✅ Responsive layout for mobile */
+@media (max-width: 768px) {
+    .plant-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .small-card,
+    .large-card {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .plant-card .overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .plant-card .overlay a {
+        font-size: 0.9rem;
+    }
+}
 @media screen and (max-width: 600px) {
     .brand-container {
         flex-direction: column-reverse;
