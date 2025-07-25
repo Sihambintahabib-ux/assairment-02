@@ -46,10 +46,7 @@
 
     }
 
-    .menu-item {
-        display: none;
-    }
-
+   
     .cart-item {
         text-align: right;
     }
@@ -75,7 +72,9 @@
         max-width: 90vw;
         padding: 0px 0px;
     }
-
+ .menu-item {
+     display: none;
+ }
     .brand-img {
         max-width: 100% !important;
         height: auto;
